@@ -1,0 +1,173 @@
+.navbar{
+    background-color: rgb(134, 14, 233);
+    
+}
+.navbar-brand{
+    color: yellow;
+}
+.btn{
+    color: white;
+}
+.QuickAccess{
+    background-color: rgb(134, 14, 233);
+}
+.img-fluid {
+    border-radius: 30px;
+}
+.section-padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.dropdown-menu{
+    background-color:  rgb(134, 14, 233);
+
+}
+
+.brif-info{
+    /* height: 220px;     */
+    width: auto;
+    height: 400px;
+
+}
+.page{
+    height: 90px;
+    padding: 76px;
+}
+p.p1{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    border: 5px solid yellow;
+    border-radius: 23px;
+    border-image: repeating-linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89)) 20;
+}
+.card{
+    background-color: rgb(134 14 233 / 75%);
+    box-shadow: 12px 12px 2px 1px rgba(0, 251, 255, 0.272);
+}
+body{
+    background-color:rgb(35, 11, 97);
+}
+.card-img-top{
+    border-bottom-right-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius)
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
+
+
+.img-div1{
+    max-width: 40%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: right;
+}
+.footer{
+    padding: 20px 0;
+    background-color: rgb(134, 14, 233);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 0px;
+   
+}
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 8px;
+    opacity: 0.75;
+ 
+}
+.footer .social a:hover{
+    opacity: 0.9;
+    color: yellow;
+    border-color: yellow;
+}
+li{
+    list-style: none;
+}
+.footer ul{
+    margin-top: 0px;
+    padding: 0px;
+    line-height: 1.6px;
+    font-size: 18px;
+    margin: 0px;
+   
+}
+.list{
+text-align: center;
+background-color:rgba(134, 14, 233, 0.358) ;
+margin: 0px;
+}
+.second{
+    /* color: white; */
+    text-decoration: none;
+    opacity: 0.8;
+}
+.second:hover{
+    opacity: 1;
+}
+.li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+.copyright{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    background-color:rgba(134, 14, 233, 0.358); 
+}
+.div2{
+    max-height: min-content;
+}
+.tt{
+    text-align: center;
+    width: auto;
+    padding-top: 85px;
+}
+
+.ali{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.search-bar{
+    background-color: rgba(134, 14, 233, 0.4);
+    height: 100px;
+    
+}
+.in1{
+    border-radius: 20px;
+    text-align: center;
+}
+.in1:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.iconS{
+    margin: 2px;
+}
+
+
+
+
+
+
+
+
+
+ 
