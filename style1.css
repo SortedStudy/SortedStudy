@@ -14,6 +14,13 @@
 .img-fluid {
     border-radius: 30px;
 }
+.img-hover{
+  transition: all 300ms;
+}
+.img-hover:hover{
+   opacity: 1;
+ transform: scale(1.10);
+}
 .section-padding{
     padding-top: 70px;
     padding-bottom: 70px;
@@ -44,10 +51,20 @@ p.p1{
 }
 .card{
     background-color: rgb(134 14 233 / 75%);
-    box-shadow: 12px 12px 2px 1px rgba(0, 251, 255, 0.272);
+    transition: all 300ms;
 }
+
+.card:hover {
+ opacity: 1;
+ transform: scale(1.10);
+}
+
 body{
     background-color:rgb(35, 11, 97);
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 .card-img-top{
     border-bottom-right-radius: var(--bs-card-inner-border-radius);
@@ -160,6 +177,73 @@ margin: 0px;
 }
 .iconS{
     margin: 2px;
+}
+
+/* Search Bar */
+.group {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ max-width: 190px;
+  margin-left: 20px;
+}
+.group1 {
+ display: flex;
+ line-height: 28px;
+ align-items: center;
+ position: relative;
+ max-width: 190px;
+  margin-left: 6px;
+}
+
+.input {
+ width: 100%;
+ height: 40px;
+ line-height: 28px;
+ padding: 0 1rem;
+ padding-left: 2.5rem;
+ border: 2px solid transparent;
+ border-radius: 8px;
+ outline: none;
+ background-color: #f3f3f4;
+ color: #0d0c22;
+ transition: .3s ease;
+}
+
+.input::placeholder {
+ color: #9e9ea7;
+}
+
+.input:focus, input:hover {
+ outline: none;
+ border-color: rgba(234,76,137,0.4);
+ background-color: #fff;
+ box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+ position: absolute;
+ left: 1rem;
+ fill: #9e9ea7;
+ width: 1rem;
+ height: 1rem;
+}
+
+/* Lectures cards */
+
+.cards{
+    background-color: white;
+    transition: all 300ms;
+}
+
+.cards:hover {
+ opacity: 1;
+ transform: scale(1.10);
+}
+
+ul {
+  padding-left: 0;
 }
 
 
