@@ -194,7 +194,8 @@ margin: 0px;
  align-items: center;
  position: relative;
  max-width: 190px;
-  margin-left: 6px;
+ margin-left: 25px;
+ margin-right: 25px;
 }
 
 .input {
