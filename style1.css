@@ -1,6 +1,6 @@
 .navbar{
     background-color: rgb(134, 14, 233);
-    
+
 }
 .navbar-brand{
     color: yellow;
@@ -92,7 +92,7 @@ body::-webkit-scrollbar{
 .footer .social{
     text-align: center;
     padding-bottom: 0px;
-   
+
 }
 .footer .social a{
     font-size: 24px;
@@ -106,7 +106,7 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     margin: 0px 8px;
     opacity: 0.75;
- 
+
 }
 .footer .social a:hover{
     opacity: 0.9;
@@ -122,12 +122,13 @@ li{
     line-height: 1.6px;
     font-size: 18px;
     margin: 0px;
-   
+
 }
 .list{
 text-align: center;
 background-color:rgba(134, 14, 233, 0.358) ;
 margin: 0px;
+padding: 1% 6%;
 }
 .second{
     /* color: white; */
@@ -145,7 +146,7 @@ margin: 0px;
     margin: 0px;
     text-align: center;
     color: white;
-    background-color:rgba(134, 14, 233, 0.358); 
+    background-color:rgba(134, 14, 233, 0.358);
 }
 .div2{
     max-height: min-content;
@@ -166,7 +167,7 @@ margin: 0px;
 .search-bar{
     background-color: rgba(134, 14, 233, 0.4);
     height: 100px;
-    
+
 }
 .in1{
     border-radius: 20px;
@@ -186,7 +187,7 @@ margin: 0px;
  align-items: center;
  position: relative;
  max-width: 190px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .group1 {
  display: flex;
@@ -194,8 +195,8 @@ margin: 0px;
  align-items: center;
  position: relative;
  max-width: 190px;
- margin-left: 25px;
- margin-right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .input {
@@ -210,6 +211,7 @@ margin: 0px;
  background-color: #f3f3f4;
  color: #0d0c22;
  transition: .3s ease;
+
 }
 
 .input::placeholder {
@@ -234,25 +236,115 @@ margin: 0px;
 /* Lectures cards */
 
 .cards{
-    background-color: white;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: all 300ms;
+
+
+
+
+
+    /* height: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.8rem 0;
+    color: #11223e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
 }
 
 .cards:hover {
- opacity: 1;
- transform: scale(1.10);
+    opacity: 1;
+    transform: none;
+    -webkit-transition:  box-shadow .2s ease-in;
+    transform: scale(0.9);
+    transition: transform .25s;
+    border: 1px solid black;
+
+
 }
 
 ul {
   padding-left: 0;
+  margin-bottom: 0;
 }
 
+.column {
 
+}
 
+#cardContainer {
+  margin-left: 7%;
+  margin-right: 7%;
+  align-items: center;
+}
 
+.cardspace{
+  padding: 7px 20px;
+}
 
+.card__arrow {
+  position: absolute;
+  background: rgba(134, 14, 233, 0.8);
+  padding: 0.4rem;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  bottom: 0;
+  right: 0;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
+.cards:hover .card__arrow {
+  background: #111;
+}
 
+.cards:hover .card__arrow svg{
+  transform: translateX(3px);
+}
 
- 
+.card_title{
+  color: black;
+}
+
+.cards:hover .card_title {
+  color: rgba(134, 14, 233, 0.8);
+  text-decoration: underline;
+}
+
+.cards {
+  align-items: baseline;
+}
+
+/* underline animation */
+.un {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.un:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.un:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
