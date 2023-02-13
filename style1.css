@@ -5,6 +5,17 @@
 .navbar-brand{
     color: yellow;
 }
+.logo{
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nextS{
+    color: #ffc107;
+}
 .btn{
     color: white;
 }
@@ -50,7 +61,7 @@ p.p1{
     border-image: repeating-linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89)) 20;
 }
 .card{
-    background-color: rgb(134 14 233 / 75%);
+    background-color: white;
     transition: all 300ms;
 }
 
@@ -71,10 +82,10 @@ body::-webkit-scrollbar{
     border-bottom-left-radius: var(--bs-card-inner-border-radius)
 }
 .card-title{
-    color: white;
+    color: black;
 }
 .card-text{
-    color: white;
+    color: black;
 }
 
 
@@ -339,7 +350,7 @@ ul {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: yellow;
+  background-color: #ffc107;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
