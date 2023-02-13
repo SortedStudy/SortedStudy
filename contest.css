@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
 .img-radius{
     border-radius: 0;
     height: 350px;
 }
+.card{
+    background-color: white;
+    border-radius: 16px;
+
+}
+.btn-color{
+    background-color: rgb(134 14 233);
+}
+.btn-color:hover{
+    background-color: rgba(0, 0, 0, 0.968);
+    color: white;
+}
+.WholeCardLink{
+    text-decoration:none; 
+    color:black;
+}
+
+/* .section-padding::before{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+} */
