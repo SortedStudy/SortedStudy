@@ -56,5 +56,7 @@ response.then((v) => {
 </div>
                 `
     }
-    cardContainer.innerHTML = ihtml
+    setTimeout(()=>{
+        cardContainer.innerHTML = ihtml
+    },1000)
 })
