@@ -1,4 +1,6 @@
+
 // fetch('https://latest-stock-price.p.rapidapi.com/price?Indices=NIFTY%2050', options)
+
 let url = 'https://script.google.com/macros/s/AKfycbxCkwGk8UBMAZo1Av1tpIm3cYNazTZHDqNQ4iVLcw-wcjnIgiCqm4HTywhetiJiow62rw/exec';
 let res = fetch(url);
 res.then((res) => {
@@ -97,6 +99,8 @@ res.then((res) => {
 
         `
     cardContainer.innerHTML = ihtml;
+
+
   }
 });
 
@@ -114,3 +118,6 @@ function search() {
     }
   }
 }
+
+
+
