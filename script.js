@@ -11,7 +11,7 @@ res.then((res) => {
   for (let i = 0; i < contests.data.length ; i+=2) {
 
     ihtml += `
-        <ul li="results ">
+      <ul li="results ">
       <div class="row">
 
         <div class="cardspace column col-lg-6 col-md-12 my-2">
