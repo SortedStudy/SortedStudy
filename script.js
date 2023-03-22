@@ -107,6 +107,7 @@ res.then((res) => {
 function search() {
   let filter = document.getElementById('searchInput').value.toUpperCase();
   let item = document.querySelectorAll('.cards');
+  console.log(item)
   let l = document.getElementsByTagName('h6');
   for (var i = 0; i <= l.length; i++) {
     let a = item[i].getElementsByTagName('h6')[0];
