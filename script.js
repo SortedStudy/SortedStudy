@@ -66,6 +66,7 @@ function displayResults(results) {
             </div>
 
     `;
+    cardcontainer.classList.add('grid')
     cardcontainer.appendChild(card);
   });
 }
@@ -75,6 +76,7 @@ function displayResults2(results) {
   cardcontainer.innerHTML = '';
 
   // Display the search results
+  if(results.length>0){
   results.forEach(result => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -96,8 +98,16 @@ function displayResults2(results) {
             </div>
 
     `;
+    cardcontainer.classList.add('grid')
     cardcontainer.appendChild(card);
   });
+}else{
+  const notFound = document.createElement('p');
+    notFound.classList.add('not-found');
+    notFound.textContent = 'No results found.';
+    cardcontainer.classList.remove('grid')
+    cardcontainer.appendChild(notFound);
+}
 }
 
 

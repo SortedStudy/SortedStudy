@@ -573,3 +573,10 @@ ul {
 .title-filter {
     color: rgb(134, 14, 233);
 }
+
+
+.not-found{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
