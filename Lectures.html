@@ -79,7 +79,7 @@
               </path>
             </g>
           </svg>
-          <input placeholder="Chapter Name" type="search" id="searchInput"  class="input">
+          <input placeholder="Chapter Name" type="search" id="searchInput" class="input">
         </div>
         <div class="group1">
           <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
@@ -89,17 +89,63 @@
               </path>
             </g>
           </svg>
-          <input placeholder="Subject Name" type="search" id="searchInput2"  class="input">
+          <input placeholder="Subject Name" type="search" id="searchInput2" class="input">
         </div>
+        <button class="btn Main-filter-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling" style="margin-right: 20px;">Filter</button>
       </div>
     </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" aria-modal="" role="">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-filter" id="offcanvasScrollingLabel">Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <h2 class="offcanvas-title1">Maths</h2>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Maths-1" >Maths-I</button>
+            </li>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Maths-2">Maths-II</button>
+            </li>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Maths-3">Maths-III</button>
+            </li>
+            <li class="list-group-item">
+              <button class="btn-filter" id="Maths-4">Maths-IV</button>
+            </li>
+            
+            <h2 class="offcanvas-title1">Physics</h2>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Physics-1" >Physics-I</button>
+            </li>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Physics-2">Physics-II</button>
+            </li>
+            <h2 class="offcanvas-title1">Chemistry</h2>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Chemistry-1" >Chemistry-I</button>
+            </li>
+            <li class="list-group-item">
+              
+              <button class="btn-filter" id="Chemistry-2">Chemistry-II</button>
+            </li>
+          </div>
+        </div>
   </section>
   <section class="" style="margin: 20px; min-height: 800px;">
-      <div class="container" id="cardcontainer" >
-        <div class="center">
-          <div class="spinner"></div>
-        </div>
-        <script src="script.js"></script>
+    <div class="container" id="cardcontainer">
+      <div class="center">
+        <div class="spinner"></div>
+      </div>
+      <script src="script.js"></script>
     </div>
   </section>
 

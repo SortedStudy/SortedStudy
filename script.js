@@ -11,6 +11,7 @@ fetch(apiUrl)
   .then(response => response.json())
   .then(jsonData => {
     data = jsonData
+    console.log(jsonData)
     cardcontainer.classList.add('grid')
     displayResults(data);
     // Function to handle search input
@@ -27,7 +28,6 @@ fetch(apiUrl)
 
     function handleSearchInput2() {
       const query = searchInput2.value.toLowerCase();
-      console.log(query)
       const results = data.data.filter(result => {
         const title = result.Subject.toLowerCase();
         return title.includes(query)
@@ -99,3 +99,20 @@ function displayResults2(results) {
     cardcontainer.appendChild(card);
   });
 }
+
+
+//*****************************FILTER***********************//
+let BtnInput = document.getElementById('Maths-I')
+let BtnInput1 = document.getElementsByClassName('btn-filter')
+for(let i=0;i<BtnInput1.length;i++){
+BtnInput1[i].addEventListener('click' , (e)=>{
+  console.log(e.target.id)
+    const query = e.target.id.toLowerCase();
+    const results = data.data.filter(result => {
+      const title = result.ImgUrl.toLowerCase();
+      return title.includes(query)
+    });
+     displayResults2(results);
+})
+}
+
