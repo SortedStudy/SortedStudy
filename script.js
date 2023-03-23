@@ -117,39 +117,3 @@ function displayResults2(results) {
     cardcontainer.appendChild(notFound);
 }
 }
-
-
-//*****************************FILTER***********************//
-let BtnInput = document.getElementById('Maths-I')
-let filterbtn = document.getElementById('filter-btn')
-let crossbtn = document.getElementById('cross-btn')
-let BtnInput1 = document.getElementsByClassName('btn-filter')
-for(let i=0;i<BtnInput1.length;i++){
-BtnInput1[i].addEventListener('click' , (e)=>{
-  console.log(e.target.id)
-    const query = e.target.id.toLowerCase();
-    const results = data.data.filter(result => {
-      const title = result.ImgUrl.toLowerCase();
-      return title.includes(query)
-    });
-    cardcontainer.classList.remove('blur')
-    document.body.style.overflow='scroll'
-     displayResults2(results);
-})
-}
-filterbtn.addEventListener('click',()=>{
-  cardcontainer.classList.toggle('blur')
-  if(cardcontainer.classList.contains('blur')){
-    document.body.style.overflow='hidden'
-  }
-  else{
-    document.body.style.overflow='scroll'
-  }
- 
-})
-
-crossbtn.addEventListener('click',()=>{
-  cardcontainer.classList.remove('blur')
-  document.body.style.overflow='scroll'
-})
-
