@@ -66,12 +66,7 @@ function displayResults(results) {
             </div>
     
     `;
-    cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(a);
-    a.style.textDecoration='none'
-    a.setAttribute('target','_black')
-    a.href=`${result.YtUrl}`
-    a.appendChild(card);
+    cardcontainer.appendChild(card);
   });
 }
 
@@ -101,19 +96,7 @@ function displayResults2(results) {
             </div>
     
     `;
-    cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(a);
-    a.style.textDecoration='none'
-    a.setAttribute('id','Link')
-    a.setAttribute('target','_black')
-    a.href=`${result.YtUrl}`
-    a.appendChild(card);
+    cardcontainer.appendChild(card);
   });
-}else{
-  const notFound = document.createElement('p');
-    notFound.classList.add('not-found');
-    notFound.textContent = 'No results found.';
-    cardcontainer.classList.remove('grid')
-    cardcontainer.appendChild(notFound);
 }
 }
