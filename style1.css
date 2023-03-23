@@ -5,6 +5,12 @@
 .navbar-brand{
     color: yellow;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
 .logo{
     display: flex;
     font-size: 25px;
@@ -491,4 +497,15 @@ ul {
     100% {
         background-positon-x: 0px;
     }
+}
+
+
+
+@media (min-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    } 
 }
