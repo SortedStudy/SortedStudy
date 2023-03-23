@@ -614,6 +614,7 @@ ul {
   }
   
   .swiper-slide:not(.swiper-slide-active){
+<<<<<<< HEAD
     filter: blur(2px);
   }
   
@@ -621,6 +622,9 @@ ul {
   .blur{
     filter: blur(2px);
     pointer-events: none;
+=======
+    filter: blur(1px);
+>>>>>>> 4de72bf (Team section Added)
   }
   
   .card__image{
@@ -678,6 +682,10 @@ ul {
     color: rgb(134, 14, 233);
   }
 
+<<<<<<< HEAD
   
 =======
 }
+=======
+  
+>>>>>>> 4de72bf (Team section Added)
