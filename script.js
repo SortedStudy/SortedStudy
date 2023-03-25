@@ -66,7 +66,16 @@ function displayResults(results) {
             </div>
     
     `;
+<<<<<<< HEAD
     cardcontainer.appendChild(card);
+=======
+    cardcontainer.classList.add('grid')
+    cardcontainer.appendChild(a);
+    a.style.textDecoration='none'
+    a.setAttribute('target','_black')
+    a.href=`${result.YtUrl}`
+    a.appendChild(card);
+>>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
   });
 }
 
@@ -96,7 +105,56 @@ function displayResults2(results) {
             </div>
     
     `;
+<<<<<<< HEAD
     cardcontainer.appendChild(card);
+=======
+    cardcontainer.classList.add('grid')
+    cardcontainer.appendChild(a);
+    a.style.textDecoration='none'
+    a.setAttribute('id','Link')
+    a.setAttribute('target','_black')
+    a.href=`${result.YtUrl}`
+    a.appendChild(card);
+>>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
   });
 }
 }
+<<<<<<< HEAD
+=======
+
+
+//*****************************FILTER***********************//
+let BtnInput = document.getElementById('Maths-I')
+let filterbtn = document.getElementById('filter-btn')
+let crossbtn = document.getElementById('cross-btn')
+let BtnInput1 = document.getElementsByClassName('btn-filter')
+for(let i=0;i<BtnInput1.length;i++){
+BtnInput1[i].addEventListener('click' , (e)=>{
+  console.log(e.target.id)
+    const query = e.target.id.toLowerCase();
+    const results = data.data.filter(result => {
+      const title = result.ImgUrl.toLowerCase();
+      return title.includes(query)
+    });
+    cardcontainer.classList.remove('blur')
+    document.body.style.overflow='scroll'
+     displayResults2(results);
+})
+}
+filterbtn.addEventListener('click',()=>{
+  cardcontainer.classList.toggle('blur')
+  if(cardcontainer.classList.contains('blur')){
+    document.body.style.overflow='hidden'
+  }
+  else{
+    document.body.style.overflow='scroll'
+  }
+ 
+})
+
+crossbtn.addEventListener('click',()=>{
+  cardcontainer.classList.remove('blur')
+  document.body.style.overflow='scroll'
+})
+
+>>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
