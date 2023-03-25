@@ -613,7 +613,13 @@ ul {
   }
   
   .swiper-slide:not(.swiper-slide-active){
+    filter: blur(2px);
+  }
+  
+  /* BLUR */
+  .blur{
     filter: blur(1px);
+    pointer-events: none;
   }
   
   .card__image{

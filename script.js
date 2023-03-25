@@ -32,7 +32,8 @@ fetch(apiUrl)
         const title = result.Subject.toLowerCase();
         return title.includes(query)
       });
-       displayResults2(results);
+      console.log(results);
+      displayResults2(results);
       
     }
     searchInput2.addEventListener('input', handleSearchInput2);
@@ -47,12 +48,11 @@ function displayResults(results) {
   // Display the search results
   results.data.forEach(result => {
     const card = document.createElement('div');
+    const a = document.createElement('a');
     card.classList.add('card');
     card.classList.add('cards');
     card.innerHTML = `
       <div class="card-body left-align">
-
-
 
               <h5 class="card_title">${result.Subject}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${result.Chapter}</h6>
@@ -64,10 +64,14 @@ function displayResults(results) {
               </div>
 
             </div>
-
+    
     `;
     cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(card);
+    cardcontainer.appendChild(a);
+    a.style.textDecoration='none'
+    a.setAttribute('target','_black')
+    a.href=`${result.YtUrl}`
+    a.appendChild(card);
   });
 }
 
@@ -79,12 +83,11 @@ function displayResults2(results) {
   if(results.length>0){
   results.forEach(result => {
     const card = document.createElement('div');
+    const a = document.createElement('a');
     card.classList.add('card');
     card.classList.add('cards');
     card.innerHTML = `
       <div class="card-body left-align">
-
-
 
               <h5 class="card_title">${result.Subject}</h5>
               <h6 class="card-subtitle mb-2 text-muted">${result.Chapter}</h6>
@@ -96,10 +99,15 @@ function displayResults2(results) {
               </div>
 
             </div>
-
+    
     `;
     cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(card);
+    cardcontainer.appendChild(a);
+    a.style.textDecoration='none'
+    a.setAttribute('id','Link')
+    a.setAttribute('target','_black')
+    a.href=`${result.YtUrl}`
+    a.appendChild(card);
   });
 }else{
   const notFound = document.createElement('p');
@@ -113,6 +121,8 @@ function displayResults2(results) {
 
 //*****************************FILTER***********************//
 let BtnInput = document.getElementById('Maths-I')
+let filterbtn = document.getElementById('filter-btn')
+let crossbtn = document.getElementById('cross-btn')
 let BtnInput1 = document.getElementsByClassName('btn-filter')
 for(let i=0;i<BtnInput1.length;i++){
 BtnInput1[i].addEventListener('click' , (e)=>{
@@ -122,7 +132,24 @@ BtnInput1[i].addEventListener('click' , (e)=>{
       const title = result.ImgUrl.toLowerCase();
       return title.includes(query)
     });
+    cardcontainer.classList.remove('blur')
+    document.body.style.overflow='scroll'
      displayResults2(results);
 })
 }
+filterbtn.addEventListener('click',()=>{
+  cardcontainer.classList.toggle('blur')
+  if(cardcontainer.classList.contains('blur')){
+    document.body.style.overflow='hidden'
+  }
+  else{
+    document.body.style.overflow='scroll'
+  }
+ 
+})
+
+crossbtn.addEventListener('click',()=>{
+  cardcontainer.classList.remove('blur')
+  document.body.style.overflow='scroll'
+})
 
