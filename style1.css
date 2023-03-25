@@ -624,6 +624,7 @@ ul {
   /* BLUR */
   .blur{
 <<<<<<< HEAD
+<<<<<<< HEAD
     filter: blur(2px);
     pointer-events: none;
 =======
@@ -631,6 +632,9 @@ ul {
 >>>>>>> 4de72bf (Team section Added)
 =======
     filter: blur(1px);
+=======
+    filter: blur(2px);
+>>>>>>> e3ecd0d (blur 2px)
     pointer-events: none;
 >>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
   }
