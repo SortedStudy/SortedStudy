@@ -64,20 +64,8 @@ function displayResults(results) {
               </div>
 
             </div>
-    
-    `;
-<<<<<<< HEAD
-    cardcontainer.appendChild(card);
-=======
-    cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(a);
-    a.style.textDecoration='none'
-    a.setAttribute('target','_black')
-    a.href=`${result.YtUrl}`
-    a.appendChild(card);
->>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
-  });
-}
+
+        </div>
 
 function displayResults2(results) {
   // Clear the previous search results
@@ -103,58 +91,57 @@ function displayResults2(results) {
               </div>
 
             </div>
-    
-    `;
-<<<<<<< HEAD
-    cardcontainer.appendChild(card);
-=======
-    cardcontainer.classList.add('grid')
-    cardcontainer.appendChild(a);
-    a.style.textDecoration='none'
-    a.setAttribute('id','Link')
-    a.setAttribute('target','_black')
-    a.href=`${result.YtUrl}`
-    a.appendChild(card);
->>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
-  });
-}
-}
-<<<<<<< HEAD
-=======
+
+        </div>
 
 
-//*****************************FILTER***********************//
-let BtnInput = document.getElementById('Maths-I')
-let filterbtn = document.getElementById('filter-btn')
-let crossbtn = document.getElementById('cross-btn')
-let BtnInput1 = document.getElementsByClassName('btn-filter')
-for(let i=0;i<BtnInput1.length;i++){
-BtnInput1[i].addEventListener('click' , (e)=>{
-  console.log(e.target.id)
-    const query = e.target.id.toLowerCase();
-    const results = data.data.filter(result => {
-      const title = result.ImgUrl.toLowerCase();
-      return title.includes(query)
-    });
-    cardcontainer.classList.remove('blur')
-    document.body.style.overflow='scroll'
-     displayResults2(results);
-})
-}
-filterbtn.addEventListener('click',()=>{
-  cardcontainer.classList.toggle('blur')
-  if(cardcontainer.classList.contains('blur')){
-    document.body.style.overflow='hidden'
+        </a>
+
+
+
+      </div>
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        `
+    cardContainer.innerHTML = ihtml;
+
+
   }
-  else{
-    document.body.style.overflow='scroll'
-  }
- 
-})
+});
 
-crossbtn.addEventListener('click',()=>{
-  cardcontainer.classList.remove('blur')
-  document.body.style.overflow='scroll'
-})
+function search() {
+  let filter = document.getElementById('searchInput').value.toUpperCase();
+  let item = document.querySelectorAll('.cards');
+  let l = document.getElementsByTagName('h6');
+  for (var i = 0; i <= l.length; i++) {
+    let a = item[i].getElementsByTagName('h6')[0];
+    let value = a.innerHTML || a.innerText || a.textContent;
+    if (value.toUpperCase().indexOf(filter) > -1) {
+      item[i].style.display = "";
+    } else {
+      item[i].style.display = "none";
+    }
+  }
+}
+
+
 
 >>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
