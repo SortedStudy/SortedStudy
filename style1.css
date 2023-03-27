@@ -572,10 +572,6 @@ ul {
 
 .title-filter {
     color: rgb(134, 14, 233);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e3ecd0d65a9c2674138249da28d51d95be2c2eb4
 }
 
 
@@ -617,37 +613,13 @@ ul {
   }
   
   .swiper-slide:not(.swiper-slide-active){
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
-=======
->>>>>>> e3ecd0d65a9c2674138249da28d51d95be2c2eb4
     filter: blur(2px);
   }
   
   /* BLUR */
   .blur{
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     filter: blur(2px);
     pointer-events: none;
-=======
-    filter: blur(1px);
->>>>>>> 4de72bf (Team section Added)
-=======
-    filter: blur(1px);
-=======
-    filter: blur(2px);
->>>>>>> e3ecd0d (blur 2px)
-    pointer-events: none;
->>>>>>> 3ddacb7 (filter blur, links added,auto close filter)
-=======
-    filter: blur(2px);
-    pointer-events: none;
->>>>>>> e3ecd0d65a9c2674138249da28d51d95be2c2eb4
   }
   
   .card__image{
@@ -705,14 +677,4 @@ ul {
     color: rgb(134, 14, 233);
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   
-=======
-}
-=======
-  
->>>>>>> 4de72bf (Team section Added)
-=======
-  
->>>>>>> e3ecd0d65a9c2674138249da28d51d95be2c2eb4
